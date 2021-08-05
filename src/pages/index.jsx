@@ -11,11 +11,10 @@ const Page = () => {
   return (
     <>
       <Navbar />
-      <Box r3f route='/box' />
       <div className='h-screen'></div>
       <main
         id='portfolio'
-        className='flex justify-center items-center w-screen h-screen flex-col'
+        className='flex flex-col items-center justify-center w-screen h-screen'
       >
         <h1 className='h-40 mx-auto my-10 font-sans text-6xl text-black'>
           Hi there!
@@ -78,6 +77,7 @@ const Page = () => {
           odio. Nunc faucibus vulputate ligula.
         </p>
       </main>
+      <Box r3f route='/box' />
     </>
   )
 }
@@ -87,7 +87,7 @@ export default Page
 export async function getStaticProps() {
   return {
     props: {
-      title: 'Index',
+      title: 'Daniel Justus | Portfolio',
     },
   }
 }
