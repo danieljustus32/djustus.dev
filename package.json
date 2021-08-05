@@ -10,7 +10,7 @@
     "lint": "yarn prettier && yarn eslint",
     "eslint": "eslint --fix \"./src/**/*.{js,jsx}\" --ext jsconfig.json",
     "prettier": "prettier --list-different \"./src/**/*.{js,jsx,md}\"",
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "export": "EXPORT=true next build && EXPORT=true next export",
     "analyze": "ANALYZE=true next build",

@@ -6,14 +6,15 @@
   * {
     box-sizing: border-box;
   }
-  
+
   html,
   body,
   #__next {
+    max-width: 100%;
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
+    padding: 10px;
+    overflow-x: hidden;
   }
 }

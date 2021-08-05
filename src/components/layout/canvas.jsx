@@ -14,7 +14,9 @@ const LControl = () => {
     }
   }, [dom, control])
   // @ts-ignore
-  return <OrbitControls ref={control} domElement={dom.current} />
+  return (
+    <OrbitControls ref={control} domElement={dom.current} enableZoom={false} />
+  )
 }
 const LCanvas = ({ children }) => {
   const dom = useStore((state) => state.dom)
@@ -22,10 +24,6 @@ const LCanvas = ({ children }) => {
   return (
     <Canvas
       mode='concurrent'
-      style={{
-        position: 'absolute',
-        top: 0,
-      }}
       onCreated={(state) => state.events.connect(dom.current)}
     >
       <LControl />

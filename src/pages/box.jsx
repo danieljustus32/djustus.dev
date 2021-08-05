@@ -1,4 +1,5 @@
 import Instructions from '@/components/dom/Instructions'
+import Navbar from '@/components/Navbar/Navbar'
 import dynamic from 'next/dynamic'
 
 const Box = dynamic(() => import('@/components/canvas/Box'), {
@@ -8,8 +9,8 @@ const Box = dynamic(() => import('@/components/canvas/Box'), {
 const Page = () => {
   return (
     <>
+      <Navbar />
       <Box r3f route='/' />
-      <Instructions />
     </>
   )
 }
